@@ -1,0 +1,131 @@
+/*elements*/
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+	background: #1e3c72;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+	font-family: Roboto, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+	background-color: #4375cb;
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+
+input {
+	background-color: #f7f7f7;
+	border: none;
+	color: #666;
+	font-size: 18px;
+	padding: 13px 13px 13px 20px;
+	width: 100%;
+}
+
+input:focus {
+	background-color: white;
+	border: none;
+	outline: 2px solid #75cb43;
+}
+
+li {
+	background-color: white;
+	color: #666;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+
+}
+
+li:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+li:hover span {
+	opacity: 1.0;
+	width: 30px;
+}
+
+span {
+	color: #fff;
+	display: inline-block;
+	height: 40px;
+	opacity: 0;
+	text-align: center;
+	transition: 0.2s linear;
+	width: 0;
+}
+
+span:hover {
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+}
+
+/*classes*/
+.add {
+	float:right;
+}
+
+.add:hover {
+	cursor: pointer;
+	color: #75cb43;
+}
+
+.bin {
+	background-color: #cb5543;
+	margin-right: 20px;
+}
+
+.bin:hover {
+	background-color: #c04735;
+}
+
+.completed {
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+.done {
+	background-color: #75cb43;
+}
+
+.done:hover {
+	background-color: #68c035;
+}
+
+.new-task {
+	display: none;
+}
+
+
+/*ids*/
+#container {
+	background-color: #4375cb;
+	box-shadow: 10px 10px 0 rgba(0,0,0, 0.3);
+	color: white;
+	margin: 100px auto;
+	overflow: hidden;
+	width: 360px;
+
+}
+
